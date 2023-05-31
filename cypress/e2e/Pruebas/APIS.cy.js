@@ -57,4 +57,10 @@ it('El endpoint "posts" tiene 100 entradas',()=>{
     cy.request('DELETE','https://jsonplaceholder.typicode.com/posts/1')
 })*/
 
+    it('Test login con comando personalizado',()=>{
+        cy.login()
+        cy.get('.subheader').should('include.text','Welcome to the Secure Area')
+    })
+
+
 })
