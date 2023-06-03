@@ -61,6 +61,4 @@ it('El endpoint "posts" tiene 100 entradas',()=>{
         cy.login()
         cy.get('.subheader').should('include.text','Welcome to the Secure Area')
     })
-
-
 })
